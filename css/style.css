@@ -1,0 +1,534 @@
+/*!
+Theme Name: Portal PPGTKMP
+Theme URI: 
+Author: Team
+Author URI: 
+Description: Theme untuk Portal PPGTKMP
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Copyright: (c) 2019 CreativeThemes.
+Text Domain: ppgtkmp
+Tags: 
+*/
+
+/* @media only screen and (max-width: 760px) {
+    h1.jdl {
+        font-size: 30px;
+    }
+
+    h1.jdl-footer {
+        font-size: 20px;
+    }
+
+    .center {
+        text-align: center;
+    }
+    .border-vertical {
+        border: none;
+    }
+} */
+
+[v-cloak] {
+    display: none;
+}
+
+body {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+li{
+    color: #3a3a3a !important;
+}
+/* h1, h2, h3, h4, h5{
+    font-family: 'Roboto', sans-serif;
+    color: #2f3f50;
+} */
+.bg-relative{
+    position: relative;
+}
+.bg-biru-muda{
+    background-color: #e3f0ff;
+}
+
+.bg-biru{
+    background-color:  #007AFF;
+}
+
+.border-tab{
+    border-top: 3px solid #007AFF !important;
+    border: 3px 0 0 0 !important;
+}
+
+.biru{
+    color: #007AFF;  
+}
+.nav-link .biru{
+    color: #007AFF;
+}
+.nav-link .active .text-primary {
+    color: white !important;
+}
+a.text-primary:focus, a.text-primary:hover {
+    color: white!important;
+}
+
+a.text-primary.active:hover {
+    color: white !important;
+}
+
+a.text-primary:hover {
+    color: #0056b3!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #007bff;
+}
+
+.btn-outline-light:hover {
+    color: #007bff !important;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* .label-blue{
+    background-color: rgb(62, 152, 255);
+    color: white;
+    top: 20px;
+    left: -20px;
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+}
+
+.arrow-left-blue {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: -20px;
+    top: 35px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+    border-right:20px solid rgb(16, 120, 240); 
+  }
+
+  .label-green{
+    background-color: rgb(61, 187, 82);
+    color: white;
+    top: 20px;
+    left: -20px;
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+}
+
+.arrow-left-green {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: -20px;
+    top: 35px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+    border-right:20px solid rgb(10, 143, 54); 
+  }
+
+  .label-red{
+    background-color: rgb(199, 33, 33);
+    color: white;
+    top: 20px;
+    left: -20px;
+    position: absolute;
+    padding: 5px 15px 5px 15px;
+    text-align: left;
+}
+
+.arrow-left-red {
+    position: absolute;
+    width: 0; 
+    height: 0; 
+    left: -20px;
+    top: 35px;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    
+    border-right:20px solid rgb(170, 0, 0); 
+  } */
+.circular {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 200px;
+    -webkit-border-radius: 200px;
+    -moz-border-radius: 200px;
+}
+
+.card {
+    padding-right: 0px;
+    padding-left: 0px;
+
+}
+
+
+.gambar-card {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+.max-4-baris {
+
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    max-height: 100px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.jdl {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.abc {
+    max-height: 750px;
+
+}
+
+.img-carousel {
+    position: relative;
+    width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    top: 20%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+/* .mediaText {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 15% 10px 10px;
+    z-index: 1;
+    color: #FFFFFF;
+    background: #000000;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+} */
+
+/* @media only screen and (max-width: 600px) {
+
+    .carousel-caption {
+        top: 10% !important;
+        left: 10%;
+        right: 10%;
+    }
+
+    .abc {
+        height: 700px !important;
+        width: 100%;
+    }
+
+    .img-carousel {
+        right: 950px;
+        position: relative;
+        top: 50px;
+        width: 1920px;
+        height: auto;
+    }
+
+
+    .small {
+        font-size: 95% !important;
+    }
+
+    .small-1 {
+        font-size: 2rem !important;
+    }
+
+    .carousel-item h5 {
+        font-size: 1rem !important;
+    }
+
+    .carousel-item h1 {
+        font-size: 2rem !important;
+    }
+
+    button {
+        font-size: 95%;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 992px) {
+
+    .carousel-caption {
+        top: 10% !important;
+    }
+
+    .abc {
+        height: 600px !important;
+        width: 100%;
+    }
+
+    .img-carousel {
+        right: 500px;
+        position: relative;
+        top: 50px;
+        width: 1600px;
+        height: auto;
+    }
+
+} */
+
+.background-tulisan {
+    background-color: #6537b7;
+    opacity: .8;
+    height: auto;
+    width: auto
+}
+
+.checked {
+    color: orange
+}
+
+a .nav-link {
+    color: #fff
+}
+
+.button-custom {
+    padding: 5px 15px;
+    margin-top: 2px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 200px
+}
+
+/* .judul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+} */
+
+.modal-body {
+    padding-bottom: 0
+}
+
+.btn-res {
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.deskripsi {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.thumbnail-rpp {
+    max-width: 100px;
+}
+
+.tipe {
+    position: absolute;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+    top: 3%;
+    left: 5%;
+    border-radius: 100px;
+}
+
+.navbar-home {
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    -ms-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out;
+}
+
+.navbar-home.scrolled {
+    background: rgb(68, 68, 68);
+    /* IE */
+    background: rgba(0, 0, 0, 0.78);
+    /* NON-IE */
+}
+
+.navbar-warna {
+    color: black;
+}
+
+
+
+.card,
+.accordion {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#accordion {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+li,
+a,
+.hitam {
+    color: black;
+
+}
+
+li,
+a,
+.hijau {
+    color: #d1d1d6;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+    color: #34C759;
+}
+
+
+.bayangan {
+    box-shadow: 0px 3px 5px 3px #ececec;
+}
+
+.garis-bawah {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.card-header,
+.warna-head,
+#headingTwo {
+    background-color: none;
+}
+
+.warna-body {
+    background-color: #e3f0ff;
+}
+
+.myList,
+#myList,
+li {
+    color: black;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.myList,
+#myList,
+li {
+    color: black;
+    padding-bottom: 10px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.card-seri{
+    cursor: pointer;
+}
+
+.section-utama{
+    min-height: 400px;
+}
+
+.bg-pattern {
+    background-image: url(bg-pattern-guru-belajar.svg);
+    background-size: cover;
+    background-clip: content-box;
+}
+
+.card-seri {
+    background-color: white;
+    color: #212529;
+}
+
+.card-seri:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    color: #0079fa;
+}
+
+.img-seri {
+    margin-top: -200px;
+}
+
+@media only screen and (max-width: 767px) {
+
+    /* h1, h2, h3, h4, h5{
+        font-family: 'Roboto', sans-serif;
+        color: #2f3f50;
+    } */
+
+    .small {
+        font-size: 95% !important;
+    }
+
+    .small-1 {
+        font-size: 2rem !important;
+    }
+
+    /* btn slider*/
+    button {
+        font-size: 95%;
+    }
+
+    .img-seri{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        max-height: 130px;
+        width: auto;
+        /* z-index: -1; */
+    }
+
+    .section-utama{
+        min-height: 250px;
+    }
+    .judul{
+        margin-top: 35px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .img-seri{
+        position: absolute;
+        top: 45px;
+        left: 0;
+    }
+
+}
+
+
+@media (min-width: 768px) {
+    .img-seri {
+        width: 280px;
+        margin-top: -200px;
+    }
+
+    .card-body-seri {
+        padding: 20px 0 20px 0;
+    }
+}
