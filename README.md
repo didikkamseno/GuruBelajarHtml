@@ -1,2 +1,2 @@
 # eduweb
-template seri guru pembelajar kemendikbud
+Template html guru pembelajar kemendikbud
